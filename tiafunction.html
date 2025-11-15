@@ -1,0 +1,48 @@
+<html>
+    <head id>
+        
+    </head>
+    <body>
+        <p id="para">
+            fghdfyfujehnfj
+        
+        </p>
+        <button onclick="document.getElementById('para').innerHTML='hi'">
+
+         click here forchange
+
+        </button>
+        <script>
+            function flower(){
+                alert('hlo')
+                document.getElementById('para').innerHTML='hlo'
+            }
+        </script>
+        <button onclick="flower()">click here</button>
+        <select name="color" id="color" onchange="bgcolour()">
+
+            <option value="lavender">lavender</option>
+            <option value="green">green</option>
+            <option value="purple">purple</option>
+            <option value="brown">brown</option>
+            <option value="cyan">cyan</option>
+
+        </select>
+        <script>
+            function bgcolour(){
+                color=document.getElementById('color').value
+                
+                document.body.style.backgroundColor=color
+            }
+        </script>
+        <script>
+            function changedata()
+            {
+                second_box=document.getElementById('data2').value
+                document.getElementById('data1').value=second_box
+            }
+        </script>
+        <input type="text" id="data1">
+        <input type="text"  id="data2" onkeydown="changedata()">
+       </body>
+</html>
